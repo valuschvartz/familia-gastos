@@ -17,12 +17,12 @@ function useColorScheme() {
 
 const DARK = {
   bg: "#0F0F13", surface: "#17171E", card: "#1E1E28", border: "#2A2A38",
-  accent: "#6C63FF", accentSoft: "#6C63FF22", green: "#2ECC8A", greenSoft: "#2ECC8A18",
+  accent: "#4f0c28", accentSoft: "#6C63FF22", green: "#2ECC8A", greenSoft: "#2ECC8A18",
   red: "#FF5C7A", text: "#F0F0FF", muted: "#8888AA", yellow: "#FFD166",
 };
 const LIGHT = {
   bg: "#F2F2F7", surface: "#FFFFFF", card: "#FFFFFF", border: "#E0E0EA",
-  accent: "#6C63FF", accentSoft: "#6C63FF15", green: "#1AAE6F", greenSoft: "#1AAE6F15",
+  accent: "#4f0c28", accentSoft: "#6C63FF15", green: "#1AAE6F", greenSoft: "#1AAE6F15",
   red: "#E8334A", text: "#0F0F1A", muted: "#8888AA", yellow: "#B8860B",
 };
 function getColors(dark) { return dark ? DARK : LIGHT; }
@@ -118,7 +118,7 @@ function LoginScreen() {
       <div style={{ width: "100%", maxWidth: 400 }}>
         <div style={{ textAlign: "center", marginBottom: 40 }}>
           <div style={{ fontSize: 52, marginBottom: 12 }}>🏡</div>
-          <h1 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 30, fontWeight: 700, color: C.text, marginBottom: 6 }}>FamiliaGastos</h1>
+          <h1 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 30, fontWeight: 700, color: C.text, marginBottom: 6 }}>Schvartz</h1>
           <p style={{ color: C.muted, fontSize: 14 }}>Ingresá con tu cuenta</p>
         </div>
         <div className="card-shadow" style={{ background: C.card, border: `1px solid ${C.border}`, borderRadius: 20, padding: "28px 24px" }}>
@@ -617,7 +617,7 @@ function AdminDashboard({ expenses, currentProfile, onAdd, onLogout, groups, cat
           <div style={{ marginBottom: 32 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 4, padding: "0 8px" }}>
               <span style={{ fontSize: 26 }}>🏡</span>
-              <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 17, color: C.text }}>FamiliaGastos</span>
+              <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 17, color: C.text }}>Schvartz</span>
             </div>
             <span style={{ fontSize: 10, color: C.accent, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, padding: "0 8px" }}>Panel Admin</span>
           </div>
