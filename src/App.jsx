@@ -2209,17 +2209,16 @@ function AdminDashboard({
           </div>
         </div>
 
-        <div
-          className="main-pad app-mobile-bottom-space safe-top"
-          style={{ padding: "16px 16px 24px", overflowY: "auto" }}
-        >
-          <div
+<div
+  className="main-pad app-mobile-bottom-space safe-top"
+  style={{ padding: "20px 20px 150px", overflowY: "auto" }}
+>          <div
             className="mobile-header"
             style={{
               display: "flex",
               justifyContent: "space-between",
               alignItems: "flex-start",
-              marginBottom: 20
+              marginBottom: 28
             }}
           >
             <div>
@@ -2289,7 +2288,7 @@ function AdminDashboard({
                 style={{
                   display: "grid",
                   gridTemplateColumns: "1fr 1fr",
-                  gap: 12,
+                  gap: 16,
                   marginBottom: 20
                 }}
               >
@@ -2453,14 +2452,15 @@ function AdminDashboard({
                 </div>
               </div>
 
-              <div className="charts-grid" style={{ marginBottom: 20 }}>
+            <div className="charts-grid" style={{ marginBottom: 28, gap: 20 }}>
                 <div
                   className="card-shadow"
                   style={{
                     background: C.card,
                     borderRadius: 16,
                     padding: "20px",
-                    border: `1px solid ${C.border}`
+                    border: `1px solid ${C.border}`,
+                    marginBottom: 28
                   }}
                 >
                   <h3
@@ -2468,7 +2468,7 @@ function AdminDashboard({
                       fontFamily: "'Space Grotesk', sans-serif",
                       fontWeight: 700,
                       fontSize: 14,
-                      marginBottom: 16,
+                      marginBottom: 24,
                       color: C.text
                     }}
                   >
@@ -2485,7 +2485,7 @@ function AdminDashboard({
                             display: "flex",
                             alignItems: "center",
                             gap: 8,
-                            marginBottom: 8
+                            marginBottom: 24
                           }}
                         >
                           <div
@@ -2984,21 +2984,20 @@ function AdminDashboard({
       </div>
 
       <div
-        className="bottom-nav safe-bottom"
-        style={{
-          position: "fixed",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          background: C.surface,
-          borderTop: `1px solid ${C.border}`,
-          display: "flex",
-          alignItems: "center",
-          padding: "8px 8px 10px",
-          boxShadow: isDark ? "none" : "0 -2px 12px #0000000D",
-          zIndex: 100
-        }}
-      >
+  className="bottom-nav"
+  style={{
+    position: "fixed",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    background: C.surface,
+    borderTop: `1px solid ${C.border}`,
+    display: "flex",
+    alignItems: "center",
+    padding: "10px 8px 18px",
+    zIndex: 1000
+  }}
+>
         {NAV.map((t) => (
           <button
             key={t.id}
@@ -3063,27 +3062,28 @@ function AdminDashboard({
           Categ.
         </button>
 
-        <button
-          onClick={onAdd}
-          style={{
-            background: C.accent,
-            border: "none",
-            borderRadius: "50%",
-            width: 44,
-            height: 44,
-            fontSize: 22,
-            cursor: "pointer",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            boxShadow: `0 4px 20px ${C.accent}66`,
-            flexShrink: 0,
-            color: "white",
-            marginLeft: 4
-          }}
-        >
-          +
-        </button>
+      <button
+  onClick={onAdd}
+  style={{
+    background: C.accent,
+    border: "none",
+    borderRadius: "50%",
+    width: 44,
+    height: 44,
+    fontSize: 22,
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    boxShadow: `0 6px 18px ${C.accent}66`,
+    flexShrink: 0,
+    color: "white",
+    marginLeft: 6
+  }}
+>
+  +
+</button>
+            
       </div>
 
       <button
